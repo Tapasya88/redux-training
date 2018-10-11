@@ -141,9 +141,6 @@ store.dispatch((dispatch)=>{
     })
 })
 */
-
-//---Commenting for counter app ---//
-/*
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
@@ -157,20 +154,6 @@ const middleware =applyMiddleware(logger)
 const store = createStore(combreducers,composeWithDevTools(middleware));
 
 ReactDOM.render(
-    <Provider store={store}>
-    <App/></Provider>,document.getElementById('root')  
-)
-*/
-
-import React from 'react'
-import {Provider} from 'react-redux'
-import {render} from 'react-dom'
-import {createStore} from 'redux'
-import combreducers from './reducers/Countercombinedreducer'
-import App from './App'
-
-const store = createStore(combreducers)
-render(
     <Provider store={store}>
     <App/></Provider>,document.getElementById('root')  
 )
