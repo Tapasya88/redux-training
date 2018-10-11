@@ -1,10 +1,8 @@
 import {combineReducers} from 'redux'
-import ActiveTrainerReducer from './reeducer-active-trainer'
-import TrainerReducer from './reducer-trainers'
+import CommentsRecucer from './comments'
 
-const combreducers = combineReducers({
-    trainers:TrainerReducer,
-    activetrainer:ActiveTrainerReducer
+const rootReducer = combineReducers({
+    cooments:CommentsRecucer
 })
 
-export default combreducers;
+export default rootReducer;

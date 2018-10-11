@@ -145,13 +145,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
 import {applyMiddleware,createStore} from 'redux'
-import combreducers from './reducers/index'
-import App from './component/App'
+import rootReducer from './reducers/index'
+import App from './component/app'
 import {logger} from 'redux-logger'
 import {composeWithDevTools} from 'redux-devtools-extension'
 
 const middleware =applyMiddleware(logger)
-const store = createStore(combreducers,composeWithDevTools(middleware));
+const store = createStore(rootReducer,composeWithDevTools(middleware));
 
 ReactDOM.render(
     <Provider store={store}>

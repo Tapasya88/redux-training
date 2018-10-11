@@ -1,9 +1,9 @@
+import {SAVE_COMMENT} from './types'
+export const saveComment =(comment)=>{
 
-const selectTrainer = (trainer)=>{
-    console.log("You clicked on trainer:"+trainer.id);
-    return {
-        type:"TRAINER_SELECTED",
-        payload:trainer
+    return{
+        type:SAVE_COMMENT,
+        payload:comment
     }
+
 }
-export default selectTrainer;
